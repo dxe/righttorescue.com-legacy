@@ -94,7 +94,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  /*background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");*/
+  background-color: #161616;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -168,7 +169,7 @@
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 5rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -305,6 +306,25 @@ h5 {
   color: #3974bd;
 }
 
+h4 {
+  color: black;
+}
+
+/* These hover opacities are for the Cases section on the homepage */
+a h4:hover, a h5:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+a img:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+#down-arrow:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
 #logo {
   max-width: 50px;
   width: 100%;
@@ -319,6 +339,14 @@ h5 {
 .toggle {
   display: none; 
 }
+
+/* basically get rid to the XL breakpoint so homepage video doesn't get too big */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
 
 
 /* for petition */

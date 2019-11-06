@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Support the Right to Rescue. Sign your name onto this open letter to support the whistleblowers facing prison time for exposing factory farm abuses and rescuing suffering animals.">
-  <meta property="og:image" content="https://righttorescue.com/img/og-image.png">
+  <meta property="og:image" content="img/og-image.png">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
 
   <title>Right to Rescue</title>
 
@@ -51,26 +52,38 @@
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
+    <div class="container d-flex h-100 align-items-center flex-column justify-content-center">
+
+       <div class="embed-responsive embed-responsive-16by9 mt-lg-5" style="border-radius: 10px;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nmbIySHqu94" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div style="padding-top: 20px;">
+          <a href="#sign" class="js-scroll-trigger">
+            <i id="down-arrow" class="fas fa-chevron-down fa-2x mb-2 text-white"></i>
+          </a>
+        </div>
+
+      <!---
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Support the Right to Rescue</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Sign your name onto this open letter to support the whistleblowers facing prison time for exposing factory farm abuses and rescuing suffering animals</h2>
         <a href="#sign" class="btn btn-primary js-scroll-trigger">Sign Now</a>
-      </div>
+      </div>--->
     </div>
   </header>
 
   <!-- Letter Section -->
-  <section id="sign" class="about-section text-center">
+  <section id="sign" class="about-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
 
-          <h2 class="text-white mb-4">Sign the Letter</h2>
+          <h2 class="text-white mb-4 text-center">Sign the Letter</h2>
 
           <p class="text-white">We, the undersigned, write to demand immediate action to rectify the abuses of the factory farming industry across the nation, and protect whistleblowers who expose this misconduct.</p>
 
-          <p class="text-white-50" id="read-more"><strong>Read more +</strong></p>
+          <p class="text-white-50 text-center" id="read-more"><strong>Read more +</strong></p>
 
           <div id="read-more-toggle" class="toggle text-white">
 
@@ -91,7 +104,7 @@
           <div id="letter-form">
             <dxe-petition petition="one-letter"></dxe-petition>
             <br />
-            <p class="text-white-50 notice">By signing, you agree to receive email messages from Direct Action Everywhere. You may unsubscribe at any time.</p>
+            <p class="text-white-50 notice text-center">By signing, you agree to receive email messages from Direct Action Everywhere. You may unsubscribe at any time.</p>
           </div>
 
       </div>
@@ -151,9 +164,9 @@
       <div class="row">
 
         <div class="col-lg-4">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/sf-ut.jpg" alt="">
+          <a href="sf-ut.html"><img class="img-fluid mb-3 mb-lg-0" src="img/sf-ut.jpg" alt=""></a>
           <div class="featured-text text-center text-lg-left">
-            <h4>Smithfield</h4>
+            <a href="sf-ut.html"><h4>Smithfield</h4></a>
             <h5>Utah</h5>
             <p class="text-black-50 mb-0">In 2017, activists rescued two piglets, Lily and Lizzie, from a Utah factory farm owned by Smithfield Foods, the largest pig-killing company in the world. Their story went viral when the FBI started hunting for the piglets, raiding sanctuaries and even cutting off part of a pig’s ear to do DNA testing. Two of the rescuers are facing 60 years in prison and are expecting trial in 2020.</p>
           </div>
@@ -249,10 +262,16 @@
 
     function toggleReadMore() {
       $("#read-more-toggle").slideToggle();
+      // change text to say "Read Less -"
+      if ($('#read-more').html() === "<strong>Read more +</strong>") {
+        $('#read-more').html("<strong>Read less -</strong>");
+      } else {
+        $('#read-more').html("<strong>Read more +</strong>");
+      }
     }
 
     if (document.location.href.indexOf('thank-you') > 0) {
-      $("#letter-form").html('<br /><br /><h4 class="text-white mb-4">Thank you for signing!</h4><br /><br />');
+      $("#letter-form").html('<br /><br /><h4 class="text-white mb-4 text-center">Thank you for signing!</h4><br /><br />');
     }
   </script>
 
