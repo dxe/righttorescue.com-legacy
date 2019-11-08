@@ -85,7 +85,19 @@
     outline: none;
     border-bottom: 0.25rem solid #3974bd;
   }
-
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
 }
 
 .masthead {
@@ -122,22 +134,6 @@
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
   }
 }
 
