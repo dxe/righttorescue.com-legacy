@@ -185,10 +185,17 @@
   padding: 2rem;
 }
 
+.projects-section .featured-text-law {
+  padding-bottom: 2rem;
+}
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 2rem 0 2rem 0;
     border-top: 0.5rem solid #3974bd;
+  }
+  .projects-section .featured-text-law {
+    padding: 1rem 0 2rem 0;
   }
 }
 
@@ -332,6 +339,14 @@ a img:hover {
 
 .section-header {
   padding-bottom: 2rem;
+}
+
+.lawyer {
+  border-radius: 50%;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* for letter */
