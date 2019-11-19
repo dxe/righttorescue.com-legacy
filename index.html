@@ -224,7 +224,7 @@
           </script>
 
           <!-- Funraise button code -->
-          <a id="donateButton" href="#donate" class="btn btn-primary mx-auto" aria-label="Donate" data-formId="8475">Donate</a>
+          <a href="#donate" class="btn btn-primary mx-auto donateButton" aria-label="Donate" data-formId="8475">Donate</a>
 
         </div>
       </div>
@@ -269,7 +269,7 @@
 
   <!-- Listener for donate button clicks -->
   <script>
-    $("#donateButton").click(function() {
+    $(".donateButton").click(function() {
       _paq.push(['trackEvent', 'Donate', 'Donate Button Clicked', 'Donate Button']);
     });
   </script>
@@ -297,8 +297,19 @@
       }
     }
 
+    const thankYouHtml = `
+      <br /><br />
+      <center>
+      <h4 class="text-white mb-4 text-center">Thanks for signing!<br /><br />Will you help us gain support by spreading the word?</h4>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frighttorescue.com" class="btn btn-primary" target="_blank" style="margin: 0 5px 0 5px; padding: 5px 10px 5px 10px; display: inline-flex; align-items: center;"><i class="fab fa-facebook-square fa-2x" style="margin-right: 10px;"></i>Share</a>
+      <a href="https://twitter.com/intent/tweet?text=Sign%20this%20letter%20letter%20to%20support%20the%20whistleblowers%20facing%20prison%20time%20for%20exposing%20factory%20farm%20abuses%20and%20rescuing%20suffering%20animals&url=http://righttorescue.com" class="btn btn-primary" target="_blank" style="margin: 0 5px 0 5px; padding: 5px 10px 5px 10px; display: inline-flex; align-items: center;"><i class="fab fa-twitter-square fa-2x" style="margin-right: 10px;"></i>Share</a>
+      <a href="#donate" class="btn btn-primary donateButton" aria-label="Donate" data-formId="8475" style="margin: 0 5px 0 5px; padding: 5px 10px 5px 10px; display: inline-flex; align-items: center;"><i class="fas fa-heart fa-2x" style="margin-right: 10px;"></i>Donate</a>
+      </center>
+      <br /><br />
+    `
+
     if (document.location.href.indexOf('thank-you') > 0) {
-      $("#letter-form").html('<br /><br /><h4 class="text-white mb-4 text-center">Thank you for signing!</h4><br /><br />');
+      $("#letter-form").html(thankYouHtml);
     }
   </script>
 
