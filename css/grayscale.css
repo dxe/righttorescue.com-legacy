@@ -88,6 +88,12 @@
 
 }
 
+@media (max-width: 992px) {
+  .poster {
+    width: 50% !important;
+  }
+}
+
 .masthead {
   position: relative;
   width: 100%;
@@ -108,7 +114,7 @@
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   color: white;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, .9));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .95));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -324,8 +330,8 @@ a h4:hover, a h5:hover {
   opacity: 0.5;
 }
 a img:hover {
-  filter: alpha(opacity=50);
-  opacity: 0.5;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
 }
 
 #down-arrow:hover {
