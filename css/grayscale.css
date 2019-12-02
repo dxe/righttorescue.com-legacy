@@ -377,8 +377,20 @@ a img:hover {
 
 /* for petition */
 
-#thermo-wrap {
-  display: none;
+#thermo-wrap #current {
+  color: white !important;
+  filter: alpha(opacity=80);
+  opacity: 0.80;
+}
+
+#thermo-wrap .goal-stat {
+  color: white !important;
+  filter: alpha(opacity=80);
+  opacity: 0.80;
+}
+
+.signit-simulated-actionbox {
+  padding-top: 3em;
 }
 
 input, select {
