@@ -396,6 +396,10 @@ textarea {
 
 /* for petition */
 
+.thankyou-text {
+  color: white;
+}
+
 #thermo-wrap #current {
   color: white !important;
   filter: alpha(opacity=80);
@@ -436,7 +440,7 @@ input, select {
   text-align: center;
 }
 
-.signit-btn-sign, .btn-sign, #facebookShare, #twitterShare {
+.signit-btn-sign, .btn-sign {
     box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
     width: 60%;
     font-family: 'Varela Round';
