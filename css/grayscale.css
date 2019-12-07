@@ -110,6 +110,7 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
+  width: 80%;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -134,7 +135,7 @@
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
-    padding: 0;
+    padding-top: 350px;
   }
   .masthead h1 {
     font-size: 6.5rem;

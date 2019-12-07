@@ -29,7 +29,7 @@
   // Collapse Navbar
   var navbarCollapse = function() {
 
-    if ($('header').height() < 675 || $("#mainNav").offset().top > 15) {
+    if ($("#mainNav").offset().top > 15) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
