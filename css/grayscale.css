@@ -357,6 +357,10 @@ a img:hover {
   margin-right: auto;
 }
 
+.semibold {
+  font-weight: 600;
+}
+
 /* for letter */
 
 .toggle {
