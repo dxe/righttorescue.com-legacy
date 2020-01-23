@@ -253,7 +253,17 @@
 
           <div style="width: 100; background-color: #30609c; border-radius: 10px;">
 
-            <h4 class="mb-4 text-center pt-4 text-white">Recent Updates</h4>
+            <h4 class="mb-4 text-center pt-4 pb-4 text-white">Recent Updates</h4>
+
+            <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
+              <strong>Jan. 16, 2020 | North Carolina (Smithfield)</strong><br />
+              This week, Arwen's felony charges were dropped and replaced with misdemeanors!
+            </p>
+
+            <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
+              <strong>Jan. 16, 2020 | North Carolina (Sospiro)</strong><br />
+              We thought trial might happen in December, but now trial has again been postponed to mid-2020 at the earliest.
+            </p>
 
             <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
               <strong>Dec. 31, 2019 | Berkeley, CA</strong><br />
@@ -270,15 +280,22 @@
               Tonight, the Berkeley City Council is voting on a resolution to support the Right to Rescue. It’s a powerful statement condemning the prosecutions in nearby Sonoma County and we need everyone to help the resolution pass! If you can come show support in person, <a href="http://dxe.io/resolution" style="color: white; text-decoration: underline;" target="_blank">please RSVP to tonight's vote here</a>. And everyone can <a href="https://www.facebook.com/directactioneverywhere/videos/736980473454984" style="color: white; text-decoration: underline;" target="_blank">share the news online</a>.</a>
             </p>
 
-            <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
-              <strong>Nov. 25, 2019 | Utah</strong><br />
-              The owner of the Norbest Turkey farm DxE investigated just released 20 turkeys to DxE activists days before Thanksgiving, for the second year in a row! He has condemned the prosecution that DxE investigators are facing and he is actively helping us rescue more animals. See the video at <a href="http://dxe.io/turkeyrescue" style="color: white; text-decoration: underline;" target="_blank">dxe.io/turkeyrescue</a>.
-            </p>
+            <p class="text-white-50 text-center pb-4" id="read-more-updates"><strong>Read more +</strong></p>
 
-            <p class="text-white px-4 pb-5" style="font-size: 0.8em;">
-              <strong>Nov. 18, 2019 | North Carolina</strong><br />
-              Sierra is out of the Smithfield case in North Carolina. She was offered a deal without charges if she named everyone involved in the investigation, but she refused. She ended up with misdemeanor charges and community service. Arwen is continuing all the way to trial.
-            </p>
+            <!-- UPDATES IN THIS DIV BE HIDDEN UNTIL EXPANDED -->
+            <div id="read-more-updates-toggle" class="toggle text-white">
+
+              <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
+                <strong>Nov. 25, 2019 | Utah</strong><br />
+                The owner of the Norbest Turkey farm DxE investigated just released 20 turkeys to DxE activists days before Thanksgiving, for the second year in a row! He has condemned the prosecution that DxE investigators are facing and he is actively helping us rescue more animals. See the video at <a href="http://dxe.io/turkeyrescue" style="color: white; text-decoration: underline;" target="_blank">dxe.io/turkeyrescue</a>.
+              </p>
+
+              <p class="text-white px-4 pb-5" style="font-size: 0.8em;">
+                <strong>Nov. 18, 2019 | North Carolina</strong><br />
+                Sierra is out of the Smithfield case in North Carolina. She was offered a deal without charges if she named everyone involved in the investigation, but she refused. She ended up with misdemeanor charges and community service. Arwen is continuing all the way to trial.
+              </p>
+
+            </div>
 
           </div>
 
@@ -355,7 +372,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Direct Action Everywhere 2019
+      Copyright &copy; Direct Action Everywhere 2020
     </div>
   </footer>
 
@@ -381,6 +398,12 @@
           toggleReadMore();
       });
 
+      // listeners for toggling updates
+      $('#read-more-updates').css('cursor','pointer');
+      $("#read-more-updates").click(function() {
+          toggleReadMoreUpdates();
+      });
+
     });
 
     function toggleReadMore() {
@@ -390,6 +413,15 @@
         $('#read-more').html("<strong>Read less -</strong>");
       } else {
         $('#read-more').html("<strong>Read more +</strong>");
+      }
+    }
+    function toggleReadMoreUpdates() {
+      $("#read-more-updates-toggle").slideToggle();
+      // change text to say "Read Less -"
+      if ($('#read-more-updates').html() === "<strong>Read more +</strong>") {
+        $('#read-more-updates').html("<strong>Read less -</strong>");
+      } else {
+        $('#read-more-updates').html("<strong>Read more +</strong>");
       }
     }
   </script>
