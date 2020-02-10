@@ -99,7 +99,7 @@
           <script defer src="https://storage.googleapis.com/dxe-petitions/api.js"></script>
 
           <div id="letter-form">
-            <dxe-petition petition="one-letter"></dxe-petition>
+            <dxe-petition petition="one-letter" cta="Sign"></dxe-petition>
             <br />
             <p class="text-white-50 notice text-center">By signing, you agree to receive email messages from Direct Action Everywhere.<br />You may unsubscribe at any time.</p>
           </div>
@@ -394,8 +394,6 @@
   <!-- Injection to change petition elements -->
   <script>
     $( document ).ready(function() {
-      // change "sign petition" to just say "sign"
-      $(".signit-btn-sign").html('Sign');
 
       // listeners for toggling letter
       $('#read-more').css('cursor','pointer');
