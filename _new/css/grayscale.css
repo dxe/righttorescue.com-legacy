@@ -99,7 +99,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 45rem;
   padding: 15rem 0;
   background-color: #161616;
 }
@@ -114,6 +114,7 @@
 
 #masthead-video {
   position: absolute;
+  overflow: hidden;
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -122,6 +123,7 @@
 
 #masthead-video-overlay {
   position: absolute;
+  overflow: hidden;
   right: 0;
   bottom: 0;
   min-width: 100%; 
