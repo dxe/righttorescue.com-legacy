@@ -370,6 +370,10 @@ a img:hover {
   color: white;
 }
 
+#nameError {
+  color: white;
+}
+
 /* basically get rid to the XL breakpoint so homepage video doesn't get too big */
 @media (min-width: 1200px) {
   .container {
