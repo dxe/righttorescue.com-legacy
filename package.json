@@ -1,0 +1,23 @@
+{
+  "name": "righttorescue.com",
+  "version": "1.0.0",
+  "description": "A static website hosted on S3 and served via CloudFront.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxe/righttorescue.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dxe/righttorescue.com/issues"
+  },
+  "homepage": "https://github.com/dxe/righttorescue.com#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0"
+  }
+}
