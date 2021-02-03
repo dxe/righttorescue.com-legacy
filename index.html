@@ -108,13 +108,12 @@
     </div>
   </section>
 
-  <style>
+  <!-- <style>
     .modal-body {
       padding: 5px !important;
     }
   </style>
 
-  <!-- Modal -->
   <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
@@ -134,7 +133,7 @@
                     streetViewControl: false,
                   }
               );
- 
+
               var icon = {
                   url: 'img/marker.png', // url
                   scaledSize: new google.maps.Size(25, 25), // scaled size
@@ -162,7 +161,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Cases Section -->
   <section id="cases" class="projects-section bg-light">
@@ -272,6 +271,11 @@
             <h4 class="mb-4 text-center pt-4 pb-4 text-white">Recent Updates</h4>
 
             <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
+              <strong>Jan. 29 2021 | Grundy County, Iowa</strong><br />
+              More charges dropped! Investigator Matt Johnson who exposed pigs being roasted alive had his trespass case dismissed, as the company refuses to testify about their actions.
+            </p>
+
+            <p class="text-white px-4 pb-3" style="font-size: 0.8em;">
               <strong>Jan. 11 2021 | Grundy County, Iowa</strong><br />
               Charges dropped! Last year, Cheyanne Holliday chained herself to the fence of an Iowa Select Farm during the campaign to end the use of "ventilation shutdown." ISF dropped their case against Cheyanne to avoid taking the stand in court.
             </p>
@@ -290,7 +294,7 @@
               <strong>Jan. 16, 2020 | North Carolina (Smithfield)</strong><br />
               This week, Arwen's felony charges were dropped and replaced with misdemeanors!
             </p>
-            
+
             <p class="text-white-50 text-center pb-4" id="read-more-updates"><strong>Read more +</strong></p>
 
             <!-- UPDATES IN THIS DIV BE HIDDEN UNTIL EXPANDED -->
@@ -359,7 +363,7 @@
             window.funraise.push('create', { form: 8475 });
 
             window.funraise.push('onSuccess', { form: 8475 }, function(donor, donation) {
-              
+
               if (donation.recurring === true) {
                 var type = "Monthly"
               } else {
