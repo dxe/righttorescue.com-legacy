@@ -18,6 +18,8 @@
   "homepage": "https://github.com/dxe/righttorescue.com#readme",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-minify": "^3.1.0",
     "gulp-replace": "^1.0.0"
   }
 }

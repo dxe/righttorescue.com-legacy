@@ -1,26 +1,17 @@
 const gulp = require('gulp');
-const replace = require('gulp-replace');
+const minify = require('gulp-minify');
+const csso = require('gulp-csso');
 
 gulp.task("html", function() {
-  var appendString = new Date().getTime();
   return gulp
     .src(["*.html"])
-    .pipe(
-      replace('.html"', function() {
-        return `.html?v=${appendString}"`;
-      })
-    )
-    .pipe(
-      replace('dxe-petitions/api.js', function() {
-        return `dxe-petitions/api.js?v=${appendString}"`;
-      })
-    )
     .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task("css", function() {
   return gulp
     .src(["css/**"])
+    .pipe(csso())
     .pipe(gulp.dest("./dist/css"));
 });
 
@@ -33,6 +24,10 @@ gulp.task("img", function() {
 gulp.task("js", function() {
   return gulp
     .src(["js/**"])
+    .pipe(minify({
+      ext:{
+            min:'.js'
+        }, noSource: true}))
     .pipe(gulp.dest("./dist/js"));
 });
 
