@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - name: build  # cache busts html links
+      - name: build
         run: |
           node --version
           npm --version

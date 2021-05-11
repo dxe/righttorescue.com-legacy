@@ -37,4 +37,10 @@ gulp.task("vendor", function() {
     .pipe(gulp.dest("./dist/vendor"));
 });
 
-gulp.task('default', gulp.parallel('html', 'css', 'img', 'js', 'vendor'));
+gulp.task("docs", function() {
+  return gulp
+    .src(["docs/**"])
+    .pipe(gulp.dest("./dist/docs"));
+});
+
+gulp.task('default', gulp.parallel('html', 'css', 'img', 'js', 'vendor', 'docs'));
