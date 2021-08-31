@@ -10,6 +10,14 @@
 
   <title>Right to Rescue</title>
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NCX3NJC');</script>
+  <!-- End Google Tag Manager -->
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,6 +32,11 @@
 </head>
 
 <body id="page-top">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCX3NJC"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -107,14 +120,10 @@
             window.funraise.push('onSuccess', { form: 8475 }, function(donor, donation) {
 
               if (donation.recurring === true) {
-                var type = "Monthly"
+                dataLayer.push({'event': 'donate-monthly-completed'});
               } else {
-                var type = "One Time"
+                dataLayer.push({'event': 'donate-once-completed'});
               }
-
-              _paq.push(['trackEvent', 'Donate', (type + ' Donation Completed'), 'Donate Button', donation.amount]);
-
-              _paq.push(['trackEvent', 'Donate', 'Donor Email Address', donation.email]);
 
             });
           </script>
@@ -167,25 +176,9 @@
   <!-- Listener for donate button clicks -->
   <script>
     $("#donateButton").click(function() {
-      _paq.push(['trackEvent', 'Donate', 'Donate Button Clicked', 'Donate Button']);
+      dataLayer.push({'event': 'donate-button-clicked'});
     });
   </script>
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//ec2.dxe.io/piwik/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '8']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
 
 </body>
 
