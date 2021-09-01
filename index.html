@@ -446,6 +446,13 @@
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.js"></script>
 
+  <!-- Listener for donate button clicks -->
+  <script>
+    $("#donateButton").click(function() {
+      dataLayer.push({'event': 'donate-button-clicked'});
+    });
+  </script>
+
   <!-- Injection to change petition elements -->
   <script>
     $( document ).ready(function() {
