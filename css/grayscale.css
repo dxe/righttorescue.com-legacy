@@ -24,7 +24,7 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: 0.9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -33,7 +33,8 @@
   background-color: transparent;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
@@ -47,7 +48,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
     filter: invert(1);
   }
@@ -85,7 +86,6 @@
     outline: none;
     border-bottom: 0.25rem solid #3974bd;
   }
-
 }
 
 @media (max-width: 992px) {
@@ -100,7 +100,13 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0%,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url("../img/bg-masthead.jpg");
   background-color: #161616;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,12 +115,15 @@
 }
 
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   color: white;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .95));
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.95)
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -150,10 +159,10 @@
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   border: 0;
 }
 
@@ -176,7 +185,12 @@
 
 .about-section {
   padding-top: 5rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    #161616 0%,
+    rgba(22, 22, 22, 0.9) 75%,
+    rgba(22, 22, 22, 0.8) 100%
+  );
 }
 
 .about-section p.notice {
@@ -217,14 +231,20 @@
   }
   .projects-section .project-text hr {
     border-color: #608fca;
-    border-width: .25rem;
+    border-width: 0.25rem;
     width: 30%;
   }
 }
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/rocky.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.1) 0%,
+      rgba(22, 22, 22, 0.5) 75%,
+      #161616 100%
+    ),
+    url("../img/rocky.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -235,7 +255,7 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -253,7 +273,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -287,7 +307,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   letter-spacing: 0.0625em;
 }
 
@@ -295,7 +315,8 @@ a {
   color: #3974bd;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   text-decoration: none;
   color: #608fca;
 }
@@ -325,7 +346,8 @@ h4 {
 }
 
 /* These hover opacities are for the Cases section on the homepage */
-a h4:hover, a h5:hover {
+a h4:hover,
+a h5:hover {
   filter: alpha(opacity=50);
   opacity: 0.5;
 }
@@ -363,7 +385,7 @@ a img:hover {
 /* for letter */
 
 .toggle {
-  display: none; 
+  display: none;
 }
 
 #suggestion {
@@ -380,7 +402,6 @@ a img:hover {
     max-width: 960px !important;
   }
 }
-
 
 input[type="color"],
 input[type="date"],
@@ -401,7 +422,6 @@ textarea {
   font-size: 16px !important;
 }
 
-
 /* for petition */
 
 .thankyou-text {
@@ -411,59 +431,65 @@ textarea {
 #thermo-wrap #current {
   color: white !important;
   filter: alpha(opacity=80);
-  opacity: 0.80;
+  opacity: 0.8;
 }
 
 #thermo-wrap .goal-stat {
   color: white !important;
   filter: alpha(opacity=80);
-  opacity: 0.80;
+  opacity: 0.8;
 }
 
 .signit-simulated-actionbox {
   padding-top: 3em;
 }
 
-input, select {
-    width: 60%;
-    padding: 12px;
-    margin: 6px 0 4px;
-    border: 1px solid #ccc;
-    background: #fafafa;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: normal;
-    box-sizing: border-box;
-    border-radius: 2px;
-    height: 40px;
+input,
+select {
+  width: 60%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 40px;
 }
 
 @media (max-width: 767px) {
-    input, select, .signit-btn-sign {
-      width: 100% !important;
-    }
+  input,
+  select,
+  .signit-btn-sign {
+    width: 100% !important;
+  }
 }
 
-.signit-myname, .signit-myaddr, .signit-myemail {
+.signit-myname,
+.signit-myaddr,
+.signit-myemail {
   text-align: center;
 }
 
-.signit-btn-sign, .btn-sign {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    width: 60%;
-    font-family: 'Varela Round';
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    border: 0;
-    border-radius: .25rem;
-    padding: 25px 46px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-style: normal;
-    color: #fff;
-    background-color: #3974bd;
-    margin-top: 10px;
+.signit-btn-sign,
+.btn-sign {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  width: 60%;
+  font-family: "Varela Round";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 25px 46px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  background-color: #3974bd;
+  margin-top: 10px;
 }
 
 .signit-btn-sign:hover {
@@ -478,5 +504,3 @@ input, select {
 .signit-btn-sign:active {
   background-color: #3974bd !important;
 }
-
-

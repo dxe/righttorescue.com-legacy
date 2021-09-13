@@ -1,0 +1,125 @@
+<!-- Support Section -->
+<section id="support" class="signup-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+                <i class="far fa-heart fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Your support allows us to stand up to legal repression and continue our groundbreaking work</h2>
+
+                <!-- Funraise embed code -->
+                <script>
+                    (function(f,u,n,r,a,i,s,e){var data={window:window,document:document,tag:"script",data:"funraise",orgId:f,uri:u,common:n,client:r,script:a};var scripts;var funraiseScript;data.window[data.data]=data.window[data.data]||[];if(data.window[data.data].scriptIsLoading||data.window[data.data].scriptIsLoaded)return;data.window[data.data].loading=true;data.window[data.data].push("init",data);scripts=data.document.getElementsByTagName(data.tag)[0];funraiseScript=data.document.createElement(data.tag);funraiseScript.async=true;funraiseScript.src=data.uri+data.common+data.script+"?orgId="+data.orgId;scripts.parentNode.insertBefore(funraiseScript,scripts)})("472c107b-a760-4be2-b990-81c429da14d5","https://assets.funraise.io","/widget/common/2.0","/widget/client","/inject-form.js");
+                </script>
+
+
+                <!-- Funraise form configuration code -->
+                <script>
+                    window.funraise.push('create', { form: 8475 });
+
+                    window.funraise.push('onSuccess', { form: 8475 }, function(donor, donation) {
+
+                        if (donation.recurring === true) {
+                            dataLayer.push({'event': 'donate-monthly-completed'});
+                        } else {
+                            dataLayer.push({'event': 'donate-once-completed'});
+                        }
+
+                    });
+                </script>
+
+                <!-- Funraise button code -->
+                <a href="#donate" class="btn btn-primary mx-auto donateButton" aria-label="Donate" data-formId="8475">Donate</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Section -->
+<section id="social" class="contact-section bg-black">
+    <div class="container">
+
+        <div class="social d-flex justify-content-center">
+            <a href="http://twitter.com/dxeverywhere" class="mx-2" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://facebook.com/directactioneverywhere" class="mx-2" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="http://instagram.com/directactioneverywhere" class="mx-2" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+    <div class="container">
+        Copyright &copy; Direct Action Everywhere <script>document.write( new Date().getFullYear() );</script>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.js"></script>
+
+<!-- Listener for donate button clicks -->
+<script>
+    $("#donateButton").click(function() {
+        dataLayer.push({'event': 'donate-button-clicked'});
+    });
+</script>
+
+<!-- Injection to change petition elements -->
+<script>
+    $( document ).ready(function() {
+
+        // listeners for toggling letter
+        $('#read-more').css('cursor','pointer');
+        $("#read-more").click(function() {
+            toggleReadMore();
+        });
+
+        // listeners for toggling updates
+        $('#read-more-updates').css('cursor','pointer');
+        $("#read-more-updates").click(function() {
+            toggleReadMoreUpdates();
+        });
+
+    });
+
+    function toggleReadMore() {
+        $("#read-more-toggle").slideToggle();
+        // change text to say "Read Less -"
+        if ($('#read-more').html() === "<strong>Read more +</strong>") {
+            $('#read-more').html("<strong>Read less -</strong>");
+        } else {
+            $('#read-more').html("<strong>Read more +</strong>");
+        }
+    }
+    function toggleReadMoreUpdates() {
+        $("#read-more-updates-toggle").slideToggle();
+        // change text to say "Read Less -"
+        if ($('#read-more-updates').html() === "<strong>Read more +</strong>") {
+            $('#read-more-updates').html("<strong>Read less -</strong>");
+        } else {
+            $('#read-more-updates').html("<strong>Read more +</strong>");
+        }
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFcN-pGhkuFUwoCuiUUxMTqdygssbvGnc&callback=initMap"></script>
+
+</body>
+
+</html>
