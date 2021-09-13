@@ -99,8 +99,9 @@
 
     function toggleReadMore() {
         $("#read-more-toggle").slideToggle();
+        console.log($('#read-more').html())
         // change text to say "Read Less -"
-        if ($('#read-more').html() === "<strong>Read more +</strong>") {
+        if ($('#read-more').html().trim() === "<strong>Read more +</strong>") {
             $('#read-more').html("<strong>Read less -</strong>");
         } else {
             $('#read-more').html("<strong>Read more +</strong>");
@@ -109,16 +110,13 @@
     function toggleReadMoreUpdates() {
         $("#read-more-updates-toggle").slideToggle();
         // change text to say "Read Less -"
-        if ($('#read-more-updates').html() === "<strong>Read more +</strong>") {
+        if ($('#read-more-updates').html().trim() === "<strong>Read more +</strong>") {
             $('#read-more-updates').html("<strong>Read less -</strong>");
         } else {
             $('#read-more-updates').html("<strong>Read more +</strong>");
         }
     }
 </script>
-
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFcN-pGhkuFUwoCuiUUxMTqdygssbvGnc&callback=initMap"></script>
 
 </body>
 
