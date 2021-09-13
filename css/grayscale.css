@@ -5,6 +5,50 @@
  * Modifications made by Jake Hobbs
  */
 
+.fade-in-first {
+  animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-second {
+  animation: fadeInAfter30Percent linear 0.75s;
+}
+
+@keyframes fadeInAfter30Percent {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-third {
+  animation: easeAndFadeIn linear 0.75s;
+}
+
+@keyframes easeAndFadeIn {
+  0% {
+    transform: translateY(125%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
