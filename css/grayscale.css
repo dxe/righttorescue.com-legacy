@@ -49,6 +49,11 @@
   }
 }
 
+.update-date {
+  padding-left: 10px;
+  color: #777777;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
