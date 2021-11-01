@@ -84,16 +84,8 @@
     </div>
 
     <div class="container">
-      <div class="iframely-embed my-3">
-        <div
-          class="iframely-responsive"
-          style="height: 140px; padding-bottom: 0"
-        >
-          <a
-            href="https://www.nytimes.com/2017/07/06/dining/animal-welfare-virtual-reality-video-meat-industry.html"
-            data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.nytimes.com%2F2017%2F07%2F06%2Fdining%2Fanimal-welfare-virtual-reality-video-meat-industry.html&key=89a4a3ff448183aeb0070b28c0c9f3b7&iframe=card-small"
-          ></a>
-        </div>
+      <div class="iframely-embed">
+        <div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://theintercept.com/2018/05/04/six-animal-rights-activists-charged-with-felonies-for-investigation-and-rescue-that-led-to-punishment-of-a-utah-turkey-farm/" data-iframely-url="//cdn.iframe.ly/nfH8dIG?card=small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
       </div>
     <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.cbsnews.com/news/as-thanksgiving-nears-animal-group-decry-conditions-at-turkey-farm/" data-iframely-url="//cdn.iframe.ly/WSUW50z?card=small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
     </div>
